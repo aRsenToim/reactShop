@@ -1,0 +1,72 @@
+@import '/src/shared/styles/normolize.scss';
+
+.Product{
+ font-family: $fontDefault;
+ margin: 20px 0px;
+ display: flex;
+ align-items: flex-start;
+ &__img{
+  display: flex;
+  align-items: flex-start;
+ }
+ &__image{
+  margin-left: 20px;
+ }
+ &__carousel{
+
+ }
+ &__carouselImg{
+  margin-bottom: 10px;
+  display: block;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  &:hover{
+   border: 1px solid #000;
+  }
+ }
+
+ &__info{
+  margin-left: 50px;
+ }
+ &__title{
+
+ }
+ &__price{
+  margin: 5px 0px;
+ }
+ &__desc{
+  max-width: 800px;
+  font-size: 17px;
+ }
+ &__sizes{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+ &__sizeActive{
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-right: 10px; 
+  border: 1px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+ }
+ &__size{
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-right: 10px; 
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover{
+   border: 1px solid #000;
+  }
+ }
+ &__buttons{
+  margin-top: 10px;
+ }
+}

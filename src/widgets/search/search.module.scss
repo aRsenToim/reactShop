@@ -1,0 +1,20 @@
+.Search {
+ display: flex;
+ align-items: center;
+ position: relative;
+
+ &__input {
+  padding: 15px 50px 15px 15px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid #b5b5b5;
+  border-radius: 20px;
+ }
+
+ &__img {
+  cursor: pointer;
+  width: 25px;
+  position: absolute;
+  right: 10px;
+ }
+}

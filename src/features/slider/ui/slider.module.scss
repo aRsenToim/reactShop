@@ -1,0 +1,67 @@
+@import '/src/shared/styles/normolize.scss';
+
+.Slider {
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ 
+ .Slider__info {
+  max-width: 600px;
+  z-index: 2000;
+
+  h1,
+  h3 {
+   margin: 10px 0px;
+   font-family: $fontUnique;
+   font-weight: 600;
+   color: #131212;
+  }
+
+  h3 {
+   font-size: 28px;
+  }
+
+  h1 {
+   font-size: 60px;
+  }
+
+  p {
+   font-size: 22px;
+   color: #828282;
+   font-family: $fontDefault;
+   max-width: 80%;
+  }
+
+  button {
+   margin: 20px 0px;
+   outline: none;
+   font-family: $fontUnique;
+   background: none;
+   border: none;
+   font-weight: 500;
+   padding: 10px;
+   display: flex;
+   font-size: 17px;
+   align-items: center;
+   cursor: pointer;
+   -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+   -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+   img {
+    margin-right: 10px;
+    width: 12px;
+    padding: 5px;
+    border-radius: 200px;
+   }
+  }
+ }
+
+ .Slider__img {
+  width: 800px;
+  object-fit: cover;
+  right: 0px;
+  cursor: pointer;
+ }
+}

@@ -1,0 +1,13 @@
+@import '/src/shared/styles/normolize.scss';
+
+.Button{
+ cursor: pointer;
+ font-size: 16px;
+ border-radius: 1px;
+ font-family: $fontDefault;
+ color: #fff;
+ border: none;
+ border-radius: 10px;
+ box-shadow: 0 0 0 rgba(10,50,65,0);
+ padding: 10px 20px;
+}

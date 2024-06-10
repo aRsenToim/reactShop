@@ -1,0 +1,48 @@
+@import '/src/shared/styles/normolize.scss';
+
+
+.BasketComponent {
+ margin: 10px 0px;
+ width: 100%;
+ font-family: $fontDefault;
+
+ &__title {
+  display: flex;
+  align-items: center;
+ }
+
+ &__titleText {
+  font-size: 40px;
+  margin-left: 10px;
+ }
+
+ &__items {
+  margin: 25px 0px;
+ }
+
+ &__empty {
+  text-align: center;
+  margin: 20px 0px;
+ }
+
+ &__emptyDesc {
+  color: #8b8b8b;
+  margin: 3px auto;
+  width: 270px;
+ }
+
+ &__hr {
+  margin: 15px 0px;
+ }
+
+ &__sum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ &__buttons {
+  margin-top: 20px;
+  float: right;
+ }
+}

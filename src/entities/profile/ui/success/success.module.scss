@@ -1,0 +1,29 @@
+@import '/src/shared/styles/normolize.scss';
+
+.SuccessComponent{
+ text-align: center;
+ margin-top: 50px;
+ font-family: $fontDefault;
+ &__title{
+ }
+ &__desc{
+  color: #818181;
+  margin-top: 10px;
+ }
+ &__button{
+  padding: 10px 40px;
+  font-size: 16px;
+  background-color: rgb(10, 50, 65);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  justify-content: center;
+  img{
+   margin-right: 10px;
+  }
+ }
+}

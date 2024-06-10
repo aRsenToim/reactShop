@@ -1,0 +1,20 @@
+@import '/src/shared/styles/normolize.scss';
+
+
+.Catalog{
+ margin: 20px 0px;
+ &__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ &__title{
+  font-family: $fontDefault;
+ }
+ &__cards{
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+}

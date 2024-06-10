@@ -1,0 +1,21 @@
+@import '/src/shared/styles/normolize.scss';
+
+.OrdersComponent{
+ margin: 10px 0px;
+ width: 100%;
+ font-family: $fontDefault;
+ &__title{
+  font-family: $fontDefault;
+ }
+ &__items{
+  width: 100%;
+ }
+ &__empty{
+  text-align: center;
+  margin: 20px 0px;
+ }
+ &__emptyDesc{
+  color: #8b8b8b;
+  margin-top: 3px;
+ }
+}

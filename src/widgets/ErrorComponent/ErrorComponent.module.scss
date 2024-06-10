@@ -1,0 +1,15 @@
+@import '/src/shared/styles/normolize.scss';
+
+
+
+.ErrorComponent{
+ font-family: $fontDefault;
+ margin: 100px auto;
+ text-align: center;
+ &__title{
+  font-size: 130px;
+ }
+ &__desc{
+
+ }
+}
