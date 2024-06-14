@@ -19,3 +19,11 @@
   margin-top: 3px;
  }
 }
+
+@media (max-width: $breakpoint__sm) {
+ .OrdersComponent{
+  &__title{
+   font-size: 29px;
+  }
+ }
+}

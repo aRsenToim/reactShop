@@ -22,7 +22,6 @@ const BasketComponent: FC<IProps> = ({ basketCards, sum, deleteBasket, clear, bu
    </div>
   </div> : <div>
    <div className={s.BasketComponent__title}>
-    <img src="/img/basket_large.svg" alt="" />
     <h1 className={s.BasketComponent__titleText}>Ваша корзина:</h1>
    </div>
    <div className={s.BasketComponent__items}>
@@ -36,7 +35,7 @@ const BasketComponent: FC<IProps> = ({ basketCards, sum, deleteBasket, clear, bu
     </div>
     <div className={s.BasketComponent__buttons}>
      <Button onclick={() => { buy(basketCards) }} title='Оформить заказ' color='#fff' bg_color='#a73afd' />
-     <Button onclick={clear} title='Отчистить все' color='#222' mg='0px 0px 0px 15px' bg_color='#ccc' />
+     <Button onclick={clear} title='Отчистить все' color='#222' mg='0px' bg_color='#ccc' />
     </div>
    </div>
   </div>}

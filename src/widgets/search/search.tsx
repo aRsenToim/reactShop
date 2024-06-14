@@ -12,7 +12,6 @@ const Search: FC<IProps> = ({searchInput, setSearchInput}) => {
   <input type="text" placeholder='Search' value={searchInput} onChange={(e) => {
    setSearchInput(e.currentTarget.value)
   }} className={s.Search__input} />
-  <img src="/img/search.svg" className={s.Search__img} alt="" />
  </div>
 }
 

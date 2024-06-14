@@ -18,3 +18,21 @@
   flex-wrap: wrap;
  }
 }
+@media (max-width: $breakpoint__sm) {
+ .Catalog{
+  &__header{
+   display: block;
+   width: 100%;
+  }
+  &__title{
+   display: none;
+  }
+  &__cards{
+   justify-content: center;
+  }
+ }
+}
+
+@media (max-width: $breakpoint__min) {
+
+}

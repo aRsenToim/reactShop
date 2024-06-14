@@ -13,7 +13,6 @@
 
  &__titleText {
   font-size: 40px;
-  margin-left: 10px;
  }
 
  &__items {
@@ -44,5 +43,26 @@
  &__buttons {
   margin-top: 20px;
   float: right;
+ }
+}
+
+@media (max-width: $breakpoint__sm) {
+ .BasketComponent{
+  &__sum{
+   h2{
+    font-size: 17px;
+   }
+  }
+ }
+}
+
+@media (max-width: $breakpoint__min) {
+ .BasketComponent{
+  &__titleText {
+   font-size: 30px;
+  }
+  &__buttons {
+   width: 100%;
+  }
  }
 }

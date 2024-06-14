@@ -34,7 +34,6 @@ const ProductComponent: FC<IProps> = ({ product, isBasket, deleteBasket, addBask
    <h2 className={s.Product__price}>{product.price} руб.</h2>
    <p className={s.Product__desc}>{product.description}</p>
    <div className={s.Product__sizes}>
-
     {product.sizes.map((size: number) =>
      <div key={size} onClick={() => { setSizeUser(size) }} className={size == sizeUser ? s.Product__sizeActive : s.Product__size}>
       {size}

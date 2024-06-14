@@ -1,72 +1,149 @@
 @import '/src/shared/styles/normolize.scss';
 
-.Product{
+.Product {
  font-family: $fontDefault;
  margin: 20px 0px;
  display: flex;
  align-items: flex-start;
- &__img{
+
+ &__img {
   display: flex;
   align-items: flex-start;
  }
- &__image{
-  margin-left: 20px;
- }
- &__carousel{
 
+ &__image {
+  margin-left: 20px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
  }
- &__carouselImg{
+
+ &__carousel {}
+
+ &__carouselImg {
   margin-bottom: 10px;
   display: block;
   border: 1px solid #fff;
   width: 100px;
   height: 100px;
   cursor: pointer;
-  &:hover{
+
+  &:hover {
    border: 1px solid #000;
   }
  }
 
- &__info{
+ &__info {
   margin-left: 50px;
  }
- &__title{
 
- }
- &__price{
+ &__title {}
+
+ &__price {
   margin: 5px 0px;
  }
- &__desc{
+
+ &__desc {
   max-width: 800px;
   font-size: 17px;
  }
- &__sizes{
+
+ &__sizes {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
  }
- &__sizeActive{
+
+ &__sizeActive {
   padding: 10px 20px;
   margin-top: 10px;
-  margin-right: 10px; 
+  margin-right: 10px;
   border: 1px solid #000;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.5s;
  }
- &__size{
+
+ &__size {
   padding: 10px 20px;
   margin-top: 10px;
-  margin-right: 10px; 
+  margin-right: 10px;
   border-radius: 10px;
   border: 1px solid #ccc;
   cursor: pointer;
   transition: 0.5s;
-  &:hover{
+
+  &:hover {
    border: 1px solid #000;
   }
  }
- &__buttons{
+
+ &__buttons {
   margin-top: 10px;
+ }
+}
+
+
+@media (max-width: $breakpoint__xl) {
+ .Product {
+  &__image {
+   width: 350px;
+   height: 350px;
+  }
+  &__carouselImg {
+   width: 80px;
+   height: 80px;
+  }
+  &__title {
+   font-size: 25px;
+  }
+  &__price {
+   font-size: 20px;
+  }
+  &__desc {
+   font-size: 16px;
+  }
+  &__sizeActive {
+   padding: 8px 13px;
+  }
+  &__size {
+   padding: 8px 13px;
+  }
+  &__buttons {
+   margin-top: 10px;
+  }
+ }
+}
+
+@media (max-width: $breakpoint__md) {
+ .Product {
+  display: block;
+  &__img{
+   display: block;
+   margin: 0px;
+  }
+  &__carousel{
+   display: flex;
+   align-items: center;
+   margin: 0px;
+  }
+  &__image{
+   margin-left: 0px;
+  }
+  &__info{
+   margin-left: 0px;
+  }
+ }
+}
+@media (max-width: $breakpoint__sm) {
+ .Product {
+  &__image {
+   width: 250px;
+   height: 250px;
+  }
+  &__carouselImg {
+   width: 70px;
+   height: 7x0px;
+  }
  }
 }

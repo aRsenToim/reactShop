@@ -45,3 +45,20 @@
   cursor: pointer;
  }
 }
+
+@media (max-width: $breakpoint__min) {
+ .OrderCard{
+  display: block;
+  &__buttons{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  }
+  &__price {
+   font-size: 14px;
+  }
+  &__title{
+   font-size: 16px;
+  }
+ }
+}
