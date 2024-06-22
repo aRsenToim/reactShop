@@ -9,23 +9,11 @@ interface IInitialState {
 const initialState: IInitialState = {
  banners: [
   {
-   title: "Купи кросы пжпжпжжп",
-   desc: "Кросыы",
-   img: "https://static.street-beat.ru/upload/resize_cache/iblock/585/500_500_1/gdk23yfubq95em0po5tp6iqonpuvobcw.jpg",
+   title: "Купи кросы от алсу",
+   desc: "Кросы от алсу со скидкой 15%",
+   img: "https://sun9-62.userapi.com/impg/mnBIwpY6xY7REsXJyfzec4drBwQQYcLS8C5jWA/3iultGoxxvc.jpg?size=648x1080&quality=96&sign=31c31c117911199613ffa0ebe4e2df93&type=album",
    id: 1,
-  },
-  {
-   title: "Купи кросы пжпжпжжп",
-   desc: "Кросыы",
-   img: "https://static.street-beat.ru/upload/resize_cache/iblock/585/500_500_1/gdk23yfubq95em0po5tp6iqonpuvobcw.jpg",
-   id: 2,
-  },
-  {
-   title: "Кросыы",
-   desc: "Кросыы",
-   img: "https://static.street-beat.ru/upload/resize_cache/iblock/585/500_500_1/gdk23yfubq95em0po5tp6iqonpuvobcw.jpg",
-   id: 3,
-  },
+  }
  ]
 }
 
