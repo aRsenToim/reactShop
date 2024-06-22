@@ -16,7 +16,6 @@ const Buying: FC = () => {
 
 
  useEffect(() => {
-  console.log(contract.orders.length)
   if (!contract.orders.length) setIsRedirectOrder(true)
  }, [contract])
 
