@@ -3,18 +3,13 @@ import { IBanner } from "./types";
 
 
 interface IInitialState {
- banners: IBanner[]
+ banners: IBanner[] | null
+ error: string
 }
 
 const initialState: IInitialState = {
- banners: [
-  {
-   title: "Купи кросы от алсу",
-   desc: "Кросы от алсу со скидкой 15%",
-   img: "https://sun9-62.userapi.com/impg/mnBIwpY6xY7REsXJyfzec4drBwQQYcLS8C5jWA/3iultGoxxvc.jpg?size=648x1080&quality=96&sign=31c31c117911199613ffa0ebe4e2df93&type=album",
-   id: 1,
-  }
- ]
+ banners: null,
+ error: ""
 }
 
 const bannersSlice = createSlice({
@@ -22,12 +17,18 @@ const bannersSlice = createSlice({
  initialState,
  reducers: {
   closeBanner(state, action: PayloadAction<number>) {
-   state.banners.splice(state.banners.indexOf(state.banners.find(item => item.id == action.payload) ?? {
+   state.banners?.splice(state.banners.indexOf(state.banners.find(item => item.id == action.payload) ?? {
     title: "",
     desc: "",
     img: "",
     id: 0,
    }), 1)
+  },
+  setBanners(state, action: PayloadAction<IBanner[]>){
+   state.banners = action.payload
+  },
+  setError(state, action: PayloadAction<string>){
+   state.error = action.payload
   }
  }
 })
@@ -36,4 +37,4 @@ const bannersSlice = createSlice({
 
 
 export default bannersSlice.reducer
-export const {closeBanner} = bannersSlice.actions
+export const {closeBanner, setBanners, setError} = bannersSlice.actions

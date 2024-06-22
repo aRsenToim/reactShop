@@ -20,7 +20,7 @@ const OrdersComponent: FC<IProps> = ({ contracts, deleteOrder }) => {
   </div> : <div>
    <h1 className={s.OrdersComponent__title}>Ваши заказы:</h1>
    <div className={s.OrdersComponent__items}>
-    {contracts.map((contract) => <OrderCard sum={contract.sum} deleteOrder={() => { deleteOrder(contract.id) }} user={contract.user} orders={contract.orders} />)}
+    {contracts.map((contract) => <OrderCard key={contract.id} sum={contract.sum} deleteOrder={() => { deleteOrder(contract.id) }} user={contract.user} orders={contract.orders} />)}
    </div>
   </div>}
  </div>

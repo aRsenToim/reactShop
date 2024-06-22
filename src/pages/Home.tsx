@@ -1,10 +1,10 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { Slider } from "../features/slider";
 import { Catalog } from "../entities/products";
 import { IProductCard } from "../entities/products/model/types";
 import { useProductCards } from "../shared/hooks/useProductCards";
 import Loader from "../widgets/loader/loader";
-import { Banners, closeBanner } from "../entities/banners";
+import { Banners, closeBanner, getBannersFetch } from "../entities/banners";
 import { useAppDispatch, useAppSelector } from "../app/appStore";
 
 
@@ -24,10 +24,16 @@ const Home: FC = () => {
   })
  }
 
+ useEffect(() => {
+  if (!banners) {
+   dispatch(getBannersFetch())
+  }
+ }, [])
+
  return <div>
   <Slider />
-  <Banners banners={banners} close={(id: number) => {dispatch(closeBanner(id))}}/>
-  {productCards ? <Catalog productCards={searchFilm(productCards ?? [], searchInput) ?? []} searchInput={searchInput} setSearchInput={(value: string) => setSearchInput(value)} /> : <Loader/>}
+  {banners ? <Banners banners={banners} close={(id: number) => { dispatch(closeBanner(id)) }} /> : undefined}
+  {productCards ? <Catalog productCards={searchFilm(productCards ?? [], searchInput) ?? []} searchInput={searchInput} setSearchInput={(value: string) => setSearchInput(value)} /> : <Loader />}
  </div>
 }
 
