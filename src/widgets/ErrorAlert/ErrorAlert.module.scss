@@ -1,0 +1,17 @@
+.ErrorAlert {
+ padding: 10px;
+ background-color: #F95959;
+ border-radius: 10px;
+ display: flex;
+ align-items: center;
+ color: #fff;
+
+ &__info {
+  display: flex;
+  align-items: center;
+  p {
+   margin-left: 10px;
+   font-weight: 600;
+  }
+ }
+}
