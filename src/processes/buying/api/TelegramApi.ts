@@ -9,10 +9,10 @@ export const TelegramApi = {
  async sendMessage(message: string){
   console.log(1);
   
-  const data = await axios.post(`${this.url}/sendMessage`, {
+  const data = await axios.post(`${this.url}sendMessage`, {
    chat_id: ID,
    parse_mode: 'html',
-   message
+   text: message
   })
   return data
  }
