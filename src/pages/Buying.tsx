@@ -1,8 +1,7 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useId, useState } from "react";
 import { BuyingComponent, BuyingFetch, deleteBasketContract, getSum } from "../processes/buying";
 import { useAppDispatch, useAppSelector } from "../app/appStore";
 import { Navigate } from "react-router-dom";
-import { generatorKey } from "../shared/helpers/generator";
 
 
 
@@ -14,6 +13,7 @@ const Buying: FC = () => {
  const [isRedirect, setIsRedirect] = useState<boolean>(false)
  const [isRedirectOrder, setIsRedirectOrder] = useState<boolean>(false)
 
+ const id = useId()
 
  useEffect(() => {
   if (!contract.orders.length) setIsRedirectOrder(true)
@@ -29,7 +29,7 @@ const Buying: FC = () => {
 
  return <BuyingComponent buying={(name: string, lastname: string, email: string, location: string) => {
   dispatch(BuyingFetch({
-   id: `${generatorKey()}`,
+   id: `${id}`,
    orders: contract.orders,
    user: {
     name: name,

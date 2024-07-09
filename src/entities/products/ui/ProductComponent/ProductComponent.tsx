@@ -2,7 +2,6 @@ import { FC, useEffect, useState } from 'react'
 import s from './ProductComponent.module.scss'
 import { IProduct } from '../../model/types'
 import Button from '../../../../widgets/Button/button'
-import { generatorKey } from '../../../../shared/helpers/generator'
 
 interface IProps {
  product: IProduct,
@@ -15,17 +14,18 @@ interface IProps {
 const ProductComponent: FC<IProps> = ({ product, isBasket, deleteBasket, addBasket, buy }) => {
  const [img, setImg] = useState<string>(product.img[0])
  const [sizeUser, setSizeUser] = useState<number>(product.sizes[0])
-
  useEffect(() => {
   if (product) {
    setImg(product.img[0])
    setSizeUser(product.sizes[0])
   }
  }, [product])
+
+ 
  return <div className={s.Product}>
   <div className={s.Product__img}>
    <div className={s.Product__carousel}>
-    {product.img.map((img: string) => <img key={generatorKey()} className={s.Product__carouselImg} onMouseOver={() => { setImg(img) }} src={img} alt='' />)}
+    {product.img.map((img: string) => <img key={Math.ceil(Math.random() * 1000)} className={s.Product__carouselImg} onMouseOver={() => { setImg(img) }} src={img} alt='' />)}
    </div>
    <img className={s.Product__image} src={img} alt="" />
   </div>
