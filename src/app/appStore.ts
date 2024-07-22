@@ -7,13 +7,16 @@ import { profileSlice } from "../entities/profile"
 import { buyingSlice } from "../processes/buying"
 import { bannersSlice } from "../entities/banners"
 import { addAskSlice } from "../entities/AddAsk"
+import { faqSlice } from "../entities/faq"
+
 
 const rootReducers = combineReducers({
  productsSlice,
  profileSlice,
  buyingSlice,
  bannersSlice, 
- addAskSlice
+ addAskSlice,
+ faqSlice
 })
 
 

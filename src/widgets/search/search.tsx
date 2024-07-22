@@ -9,7 +9,7 @@ interface IProps {
 const Search: FC<IProps> = ({searchInput, setSearchInput}) => {
  
  return <div className={s.Search}>
-  <input type="text" placeholder='Search' value={searchInput} onChange={(e) => {
+  <input type="text" placeholder='Поиск' value={searchInput} onChange={(e) => {
    setSearchInput(e.currentTarget.value)
   }} className={s.Search__input} />
  </div>

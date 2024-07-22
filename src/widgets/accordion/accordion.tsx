@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import s from './accordion.module.scss'
 import AccordionItem from '../accordionItem/accordionItem'
-import { IAccordionItem } from '../../entities/faq/types/types'
+import { IAccordionItem } from '../../entities/faq/model/types'
 
 
 interface IProps {
@@ -10,7 +10,7 @@ interface IProps {
 
 const Accordion: FC<IProps> = ({ items }) => {
  return <div className={s.Accordion}>
-  {items.map((item) => <AccordionItem key={item.title} title={item.title} content={item.content} />)}
+  {items.map((item) => <AccordionItem key={item.id} title={item.title} content={item.content} />)}
  </div>
 }
 

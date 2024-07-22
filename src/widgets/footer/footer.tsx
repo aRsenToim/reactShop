@@ -6,7 +6,7 @@ import s from './footer.module.scss'
 const Footer: FC = () => {
  return <div className={s.Footer}>
   <section className={s.Footer__section}>
-   <h3 className={s.Footer__title}>Follow Us.</h3>
+   <h3 className={s.Footer__title}>Подписывайтесь на нас.</h3>
    <p className={s.Footer__description}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, earum?</p>
    <ul className={s.Footer__networks}>
     <li>
@@ -21,7 +21,7 @@ const Footer: FC = () => {
    </ul>
   </section>
   <section className={s.Footer__section}>
-   <h3>Contact Us.</h3>
+   <h3>Связаться со мной.</h3>
    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
    <b>+7 996 961 27 30</b>
    <a className={s.Footer__link} href="mailto:arsen.hajranov123@gmail.com">arsen.hajranov123@gmail.com</a>

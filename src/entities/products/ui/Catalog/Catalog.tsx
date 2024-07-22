@@ -13,7 +13,7 @@ interface IProps {
 const Catalog: FC<IProps> = ({productCards, searchInput, setSearchInput}) => {
  return <div className={s.Catalog}>
   <div className={s.Catalog__header}>
-   <h1 className={s.Catalog__title}>New assortment:</h1>
+   <h1 className={s.Catalog__title}>Новый ассортимент:</h1>
    <Search searchInput={searchInput} setSearchInput={setSearchInput}/>
   </div>
   <div className={s.Catalog__cards}>

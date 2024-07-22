@@ -2,49 +2,50 @@
 
 
 .Footer {
- font-family: $fontDefault;
- margin: 20px 0px;
- padding: 20px;
- display: flex;
- align-items: flex-start;
+    font-family: $fontDefault;
+    margin: 20px 0px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
 
- &__section {
-  width: 350px;
- }
+    &__section {
+        width: 350px;
+    }
 
- &__description {
-  margin-top: 3px;
-  font-size: 15px;
- }
+    &__description {
+        margin-top: 3px;
+        font-size: 15px;
+    }
 
- &__networks {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
+    &__networks {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
 
-  li {
-   list-style: none;
-   cursor: pointer;
-   margin-right: 5px;
+        li {
+            list-style: none;
+            cursor: pointer;
+            margin-right: 5px;
 
-   img {
-    width: 30px;
-    object-fit: cover;
-   }
-  }
- }
+            img {
+                width: 30px;
+                object-fit: cover;
+            }
+        }
+    }
 
- &__link {
-  text-decoration: none;
-  display: block;
- }
+    &__link {
+        text-decoration: none;
+        display: block;
+    }
 }
 
 @media (max-width: 800px) {
- .Footer {
-  display: block;
-  &__section{
-   margin: 20px 0px;
-  }
- }
+    .Footer {
+        display: block;
+
+        &__section {
+            margin: 20px 0px;
+        }
+    }
 }

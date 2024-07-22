@@ -10,16 +10,18 @@ import Footer from '../../../widgets/footer/footer'
 
 
 const BaseLayout: FC = () => {
- const dispatch = useAppDispatch()
- useEffect(() => {
-  dispatch(getProfileFetch())
- }, [])
+    const dispatch = useAppDispatch()
+    useEffect(() => {
+        dispatch(getProfileFetch())
+    }, [])
 
- return <div className={s.BaseLayout}>
-  <Header/>
-  <Outlet/>
-  <Footer/>
- </div>
+    return <div className={s.BaseLayout}>
+        <Header />
+        <Outlet />
+        <div className={s.BaseLayout__footer}>
+            <Footer />
+        </div>
+    </div>
 }
 
 
