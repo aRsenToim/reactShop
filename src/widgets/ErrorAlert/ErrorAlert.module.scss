@@ -1,17 +1,21 @@
-.ErrorAlert {
- padding: 10px;
- background-color: #F95959;
- border-radius: 10px;
- display: flex;
- align-items: center;
- color: #fff;
+@import '/src/shared/styles/normolize.scss';
 
- &__info {
-  display: flex;
-  align-items: center;
-  p {
-   margin-left: 10px;
-   font-weight: 600;
-  }
- }
+.ErrorAlert {
+    font-family: $fontDefault;
+    padding: 10px;
+    background-color: #F95959;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    &__info {
+        display: flex;
+        align-items: center;
+
+        p {
+            margin-left: 10px;
+            font-weight: 600;
+        }
+    }
 }

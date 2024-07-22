@@ -20,6 +20,11 @@ const Header: FC = () => {
      <img src="/img/basket.svg" alt="" />
     </NavLink>
    </li>
+   <li>
+    <NavLink to='/faq'>
+     <img src="/img/faq.png" alt="" />
+    </NavLink>
+   </li>
   </ul>
  </div>
 }

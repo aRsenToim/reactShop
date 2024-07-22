@@ -5,7 +5,7 @@ import SuccessComponent from "../entities/profile/ui/success/success";
 
 
 const Success: FC = () => {
- return <SuccessComponent/>
+ return <SuccessComponent title="Заказ оформлен!" desc="Ваш заказ #18 скоро будет передан курьерской доставке"/>
 }
 
 

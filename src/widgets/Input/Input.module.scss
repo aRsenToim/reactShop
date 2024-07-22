@@ -1,6 +1,8 @@
+@import '/src/shared/styles/normolize.scss';
 
 .input{
  margin: 10px 0px;
+ font-family: $fontDefault;
  width: 100%;
  &__label{
   display: block;

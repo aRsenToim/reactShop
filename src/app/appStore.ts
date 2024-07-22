@@ -6,12 +6,14 @@ import { productsSlice } from "../entities/products"
 import { profileSlice } from "../entities/profile"
 import { buyingSlice } from "../processes/buying"
 import { bannersSlice } from "../entities/banners"
+import { addAskSlice } from "../entities/AddAsk"
 
 const rootReducers = combineReducers({
  productsSlice,
  profileSlice,
  buyingSlice,
- bannersSlice
+ bannersSlice, 
+ addAskSlice
 })
 
 

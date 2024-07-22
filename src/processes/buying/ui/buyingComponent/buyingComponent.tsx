@@ -65,7 +65,12 @@ const BuyingComponent: FC<IProps> = ({ contract, deleteBasket, buying }) => {
     <h1>{contract.sum - (contract.sum * 0.05)} Р</h1>
    </div>
    <div className={s.BuyingComponent__buttons}>
-    <Button width='100%' title='Оформить заказ' onclick={BuyingProduct} color='#fff' bg_color='rgb(10, 50, 65)' mg='10px 0px 0px 0px' />
+    <Button styles={{
+        width: "100%",
+        color: "#fff",
+        bg_color: "rgb(10, 50, 65)",
+        mg: "10px 0px 0px 0px"
+    }} title='Оформить заказ' onclick={BuyingProduct} />
    </div>
   </div>
  </div>
